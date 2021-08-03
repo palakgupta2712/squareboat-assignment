@@ -1,26 +1,35 @@
-.root {
-  background-color: #1a253c;
-  color: white;
-  display: flex;
-  padding: 16px;
+.container {
+  background: #1a253c;
+  padding: 5px 30px 10px;
 }
-
-h4 {
-  margin: 0 5%;
+.navbar {
+  display: flex;
+  background: #1a253c;
+  padding: 10px 0;
+  color: white;
+  align-items: center;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-bottom: 1px solid #4d618e;
+}
+.logo {
+  margin: 0;
   flex-grow: 1;
 }
-
-.jobs {
+.logo__text {
   color: #43afff;
 }
-
-button {
+.btn {
+  border: 1px solid #43afff;
+  padding: 10px 20px;
+  border-radius: 5px;
   background-color: #43afff33;
   color: white;
-  border: 1px solid #43afff;
-  border-radius: 5px;
-  padding: 6px 14px;
-  font-size: 12px;
-  margin: 0 5%;
-  cursor: pointer;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.btn__links {
+  text-decoration: none;
+  color: white;
 }
