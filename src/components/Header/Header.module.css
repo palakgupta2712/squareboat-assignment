@@ -1,0 +1,26 @@
+.root {
+  background-color: #1a253c;
+  color: white;
+  display: flex;
+  padding: 16px;
+}
+
+h4 {
+  margin: 0 5%;
+  flex-grow: 1;
+}
+
+.jobs {
+  color: #43afff;
+}
+
+button {
+  background-color: #43afff33;
+  color: white;
+  border: 1px solid #43afff;
+  border-radius: 5px;
+  padding: 6px 14px;
+  font-size: 12px;
+  margin: 0 5%;
+  cursor: pointer;
+}

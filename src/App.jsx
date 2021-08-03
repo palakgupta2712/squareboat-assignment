@@ -1,7 +1,12 @@
 import React from "react";
-import "./normalize.css";
+import Header from "./components/Header/Header";
+
 function App() {
-  return <div>MyJobs</div>;
+  return (
+    <div>
+      <Header />
+    </div>
+  );
 }
 
 export default App;
