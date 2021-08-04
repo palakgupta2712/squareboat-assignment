@@ -20,5 +20,6 @@ html,
 body {
   margin: 0;
   padding: 0;
-  background-color: #edf6ff;
+  background: linear-gradient(180deg, #1a253c 50%, #edf6ff 50%);
+  height: 100vh;
 }
