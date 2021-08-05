@@ -3,19 +3,16 @@
   max-width: 400px;
   margin: 80px auto;
   border-radius: 10px;
-  padding: 10px;
+  padding: 10px 30px;
 }
 
-h3 {
-  margin: 0;
-}
-.email,
-.password {
+.title,
+.description,
+.location {
   margin: 10px 0;
 }
-label {
-  font-size: 14px;
-}
+
+textarea,
 input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -24,32 +21,20 @@ input[type="password"] {
   border-radius: 5px;
   border: 1px solid #43afff;
   outline: #43afff;
-}
-input[type="text"]::placeholder,
-input[type="password"]::placeholder {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   font-size: 12px;
-}
-
-.password__label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 14px;
-}
-.register_link {
-  text-align: center;
-}
-
-.link {
-  color: #43afff;
-  text-decoration: none;
 }
 
 .login__btn {
   display: block;
   color: white;
-  margin: 30px auto;
+  margin: 15px auto;
   background-color: #43afff;
   padding: 6px 30px;
   border: 1px solid #43afff;
   border-radius: 5px;
+}
+
+.heading {
+  color: black;
 }

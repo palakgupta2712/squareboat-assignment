@@ -1,0 +1,21 @@
+.container {
+  background-color: white;
+  max-width: 400px;
+  margin: 60px auto;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.password {
+  display: flex;
+  justify-content: space-between;
+}
+.signup__btn {
+  display: block;
+  color: white;
+  margin: 30px auto;
+  background-color: #43afff;
+  padding: 6px 30px;
+  border: 1px solid #43afff;
+  border-radius: 5px;
+}

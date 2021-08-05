@@ -1,23 +1,52 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link, NavLink } from "react-router-dom";
+import Avatar from "../Avatar/Avatar";
+import LoginButton from "../LoginButton/LoginButton";
 import styles from "./Header.module.css";
 function Header() {
+  const [user, setUser] = useState();
+  useEffect(() => {
+    setUser(localStorage.getItem("currentUser"));
+  }, []);
   return (
     <div className={styles.container}>
       <div className={styles.navbar}>
-        <h3 className={styles.logo}>
-          My<span className={styles.logo__text}>Jobs</span>
-        </h3>
-        <button className={styles.btn}>
-          <Link className={styles.btn__links} to="/login">
-            Login
+        <div className={styles.logo}>
+          <Link className={styles.logo__link} to="/">
+            My<span className={styles.logo__text}>Jobs</span>
           </Link>
-          /
-          <Link className={styles.btn__links} to="/register">
-            Signup
-          </Link>
-        </button>
+        </div>
+
+        {user ? (
+          <>
+            <NavLink
+              to="/dashboard"
+              activeStyle={{
+                fontWeight: "bold",
+                borderBottom: "2px solid #43AFFF",
+              }}
+              className={styles.primary_text}
+            >
+              Dashboard{" "}
+            </NavLink>
+            <NavLink
+              to="/postjob"
+              activeStyle={{
+                fontWeight: "bold",
+                borderBottom: "2px solid #43AFFF",
+              }}
+              className={styles.primary_text}
+            >
+              Post a Job
+            </NavLink>
+            <Avatar user={user} />
+          </>
+        ) : (
+          <LoginButton />
+        )}
       </div>
+
+      {console.log(user)}
     </div>
   );
 }

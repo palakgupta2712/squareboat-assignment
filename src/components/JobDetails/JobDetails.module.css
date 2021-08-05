@@ -1,0 +1,19 @@
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.actions_location {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: capitalize;
+}
+.button {
+  background-color: #43afff33;
+  border: none;
+  outline: none;
+  color: #303f60;
+  border-radius: 5px;
+  padding: 8px 10px;
+}
