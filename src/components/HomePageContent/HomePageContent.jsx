@@ -2,6 +2,7 @@ import React from "react";
 import { Card } from "react-bootstrap";
 import image from "../../img/solaytic.png";
 import headerImg from "../../img/mainimg.jpg";
+import { Link } from "react-router-dom";
 
 function HomePageContent() {
   return (
@@ -26,7 +27,12 @@ function HomePageContent() {
               borderRadius: "5px",
             }}
           >
-            Get Started
+            <Link
+              style={{ color: "white", textDecoration: "none" }}
+              to="/register"
+            >
+              Get Started
+            </Link>
           </button>
         </div>
 
