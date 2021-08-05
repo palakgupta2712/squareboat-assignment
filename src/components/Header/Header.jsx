@@ -45,8 +45,6 @@ function Header() {
           <LoginButton />
         )}
       </div>
-
-      {console.log(user)}
     </div>
   );
 }
